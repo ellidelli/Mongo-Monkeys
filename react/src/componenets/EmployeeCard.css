@@ -1,0 +1,32 @@
+.employee-card {
+    outline: auto;
+    background-color: rgb(220, 233, 233);
+    width: 45vw;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin: 2px;
+}
+
+.employees {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.home > h1 {
+    align-content: center;
+}
+.home > img {
+    width: 30vw;
+}

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import {
   BrowserRouter as Router,
@@ -14,12 +14,35 @@ import Login from "./componenets/Login.jsx"
 import MyAccount from "./componenets/MyAccount.jsx"
 
 function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`${import.meta.env.VITE_EMPLOYEES_API_URL}`)
+        .then(res=>res.json())
+        console.log(response)
+        setData(response);
+      } catch (error) {
+        console.error('Error fetching employees: ', error)
+      }
+    }
+    fetchData();
+  }, [])
+
+  const style = {
+    img: {
+      width: '50px'
+    }
+  };
+
   return (
+
     <>
       <Router>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/"><img src={monkey} alt="" /></a>
+            <a className="navbar-brand" href="/"><img src={monkey} alt="" style={style.img} /></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -36,9 +59,9 @@ function App() {
                   </Link>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Search</button>
+              <form className="d-flex" role="search">
+                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button className="btn btn-outline-success" type="submit">Search</button>
               </form>
               <ul className="navbar-nav">
                 <li className="nav-item">
@@ -57,11 +80,11 @@ function App() {
         </nav>
         <div>
           <Routes>
-            <Route exact path = '/' element= {<Home></Home>}/>
-            <Route path = '/about' element = {<About></About>}></Route>
-            <Route path = '/contact' element = {<Contact></Contact>}></Route>
-            <Route path = '/myaccount' element = {<MyAccount></MyAccount>}></Route>
-            <Route path = '/login' element = {<Login></Login>}></Route>
+            <Route exact path='/' element={<Home data={data}></Home>} />
+            <Route path='/about' element={<About></About>}></Route>
+            <Route path='/contact' element={<Contact></Contact>}></Route>
+            <Route path='/myaccount' element={<MyAccount></MyAccount>}></Route>
+            <Route path='/login' element={<Login></Login>}></Route>
           </Routes>
         </div>
       </Router>
