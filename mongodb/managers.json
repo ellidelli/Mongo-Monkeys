@@ -1,0 +1,221 @@
+[
+    {
+        "manager_id": 1,
+        "name": "Jennifer Webster",
+        "phone": 9118409814,
+        "job_role": "Manager",
+        "work_location": "Chicago",
+        "salary": 83386,
+        "managed_employees": [
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "manager_id": 4,
+        "name": "Natasha Mendez",
+        "phone": 7257260116,
+        "job_role": "Manager",
+        "work_location": "Chicago",
+        "salary": 148101,
+        "managed_employees": [
+            5,
+            6,
+            7
+        ]
+    },
+    {
+        "manager_id": 7,
+        "name": "Tanya Bradley",
+        "phone": 6058518901,
+        "job_role": "Manager",
+        "work_location": "New York",
+        "salary": 106470,
+        "managed_employees": [
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "manager_id": 10,
+        "name": "Rachel Kim",
+        "phone": 9552168420,
+        "job_role": "Manager",
+        "work_location": "Chicago",
+        "salary": 100035,
+        "managed_employees": [
+            11,
+            12,
+            13
+        ]
+    },
+    {
+        "manager_id": 13,
+        "name": "Jennifer Jones",
+        "phone": 4265652731,
+        "job_role": "Manager",
+        "work_location": "New York",
+        "salary": 134223,
+        "managed_employees": [
+            14,
+            15,
+            16
+        ]
+    },
+    {
+        "manager_id": 16,
+        "name": "Brian Fritz Jr.",
+        "phone": 4226929556,
+        "job_role": "Manager",
+        "work_location": "New York",
+        "salary": 122862,
+        "managed_employees": [
+            17,
+            18,
+            19
+        ]
+    },
+    {
+        "manager_id": 19,
+        "name": "Brent Thomas",
+        "phone": 5567833892,
+        "job_role": "Manager",
+        "work_location": "Austin",
+        "salary": 130334,
+        "managed_employees": [
+            20,
+            21,
+            22
+        ]
+    },
+    {
+        "manager_id": 22,
+        "name": "Rachel Wright",
+        "phone": 6688794405,
+        "job_role": "Manager",
+        "work_location": "Chicago",
+        "salary": 116710,
+        "managed_employees": [
+            23,
+            24,
+            25
+        ]
+    },
+    {
+        "manager_id": 25,
+        "name": "Katherine Parks",
+        "phone": 2923666522,
+        "job_role": "Manager",
+        "work_location": "San Francisco",
+        "salary": 167846,
+        "managed_employees": [
+            26,
+            27,
+            28
+        ]
+    },
+    {
+        "manager_id": 28,
+        "name": "Sandra Walker",
+        "phone": 2026450503,
+        "job_role": "Manager",
+        "work_location": "New York",
+        "salary": 106076,
+        "managed_employees": [
+            29,
+            30,
+            31
+        ]
+    },
+    {
+        "manager_id": 31,
+        "name": "Shelby Clayton",
+        "phone": 6090585288,
+        "job_role": "Manager",
+        "work_location": "Chicago",
+        "salary": 89253,
+        "managed_employees": [
+            32,
+            33,
+            34
+        ]
+    },
+    {
+        "manager_id": 34,
+        "name": "Jody Roberts",
+        "phone": 8599623463,
+        "job_role": "Manager",
+        "work_location": "New York",
+        "salary": 75272,
+        "managed_employees": [
+            35,
+            36,
+            37
+        ]
+    },
+    {
+        "manager_id": 37,
+        "name": "Victoria Barrett",
+        "phone": 9274048588,
+        "job_role": "Manager",
+        "work_location": "San Francisco",
+        "salary": 100089,
+        "managed_employees": [
+            38,
+            39,
+            40
+        ]
+    },
+    {
+        "manager_id": 40,
+        "name": "Joseph Walker",
+        "phone": 1648886623,
+        "job_role": "Manager",
+        "work_location": "Austin",
+        "salary": 106326,
+        "managed_employees": [
+            41,
+            42,
+            43
+        ]
+    },
+    {
+        "manager_id": 43,
+        "name": "Christopher Lowe",
+        "phone": 4865715544,
+        "job_role": "Manager",
+        "work_location": "Austin",
+        "salary": 94828,
+        "managed_employees": [
+            44,
+            45,
+            46
+        ]
+    },
+    {
+        "manager_id": 46,
+        "name": "Matthew Alexander",
+        "phone": 5818754802,
+        "job_role": "Manager",
+        "work_location": "San Francisco",
+        "salary": 144231,
+        "managed_employees": [
+            47,
+            48,
+            49
+        ]
+    },
+    {
+        "manager_id": 49,
+        "name": "Jonathan Smith MD",
+        "phone": 6722984353,
+        "job_role": "Manager",
+        "work_location": "Austin",
+        "salary": 78717,
+        "managed_employees": [
+            50
+        ]
+    }
+]

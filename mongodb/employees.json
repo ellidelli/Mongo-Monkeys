@@ -1,0 +1,452 @@
+[
+    {
+        "employee_id": 1,
+        "name": "Jennifer Webster",
+        "phone": 9118409814,
+        "job_role": "Data Analyst",
+        "work_location": "Chicago",
+        "salary": 55591,
+        "managed_by": null
+    },
+    {
+        "employee_id": 2,
+        "name": "Kim Vasquez",
+        "phone": 5613064785,
+        "job_role": "HR Specialist",
+        "work_location": "Austin",
+        "salary": 68317,
+        "managed_by": 1
+    },
+    {
+        "employee_id": 3,
+        "name": "Robert Price",
+        "phone": 5640357784,
+        "job_role": "Product Manager",
+        "work_location": "New York",
+        "salary": 50032,
+        "managed_by": 1
+    },
+    {
+        "employee_id": 4,
+        "name": "Natasha Mendez",
+        "phone": 7257260116,
+        "job_role": "HR Specialist",
+        "work_location": "Chicago",
+        "salary": 98734,
+        "managed_by": 1
+    },
+    {
+        "employee_id": 5,
+        "name": "David Winters",
+        "phone": 8283181900,
+        "job_role": "Data Analyst",
+        "work_location": "Chicago",
+        "salary": 90334,
+        "managed_by": 4
+    },
+    {
+        "employee_id": 6,
+        "name": "Ronald Salazar",
+        "phone": 2151062806,
+        "job_role": "HR Specialist",
+        "work_location": "Chicago",
+        "salary": 95098,
+        "managed_by": 4
+    },
+    {
+        "employee_id": 7,
+        "name": "Tanya Bradley",
+        "phone": 6058518901,
+        "job_role": "Product Manager",
+        "work_location": "New York",
+        "salary": 70980,
+        "managed_by": 4
+    },
+    {
+        "employee_id": 8,
+        "name": "Elizabeth Hensley",
+        "phone": 8415202904,
+        "job_role": "Software Engineer",
+        "work_location": "Chicago",
+        "salary": 113744,
+        "managed_by": 7
+    },
+    {
+        "employee_id": 9,
+        "name": "Robert Lopez",
+        "phone": 7508294725,
+        "job_role": "Software Engineer",
+        "work_location": "Austin",
+        "salary": 91665,
+        "managed_by": 7
+    },
+    {
+        "employee_id": 10,
+        "name": "Rachel Kim",
+        "phone": 9552168420,
+        "job_role": "Product Manager",
+        "work_location": "Chicago",
+        "salary": 66690,
+        "managed_by": 7
+    },
+    {
+        "employee_id": 11,
+        "name": "William Salazar",
+        "phone": 7860794950,
+        "job_role": "Designer",
+        "work_location": "San Francisco",
+        "salary": 91896,
+        "managed_by": 10
+    },
+    {
+        "employee_id": 12,
+        "name": "Andrew Miller",
+        "phone": 5062738216,
+        "job_role": "Data Analyst",
+        "work_location": "Austin",
+        "salary": 87338,
+        "managed_by": 10
+    },
+    {
+        "employee_id": 13,
+        "name": "Jennifer Jones",
+        "phone": 4265652731,
+        "job_role": "Data Analyst",
+        "work_location": "New York",
+        "salary": 89482,
+        "managed_by": 10
+    },
+    {
+        "employee_id": 14,
+        "name": "Mark Bruce",
+        "phone": 9678203787,
+        "job_role": "Product Manager",
+        "work_location": "New York",
+        "salary": 67016,
+        "managed_by": 13
+    },
+    {
+        "employee_id": 15,
+        "name": "Brenda Church",
+        "phone": 5077928674,
+        "job_role": "Product Manager",
+        "work_location": "New York",
+        "salary": 106424,
+        "managed_by": 13
+    },
+    {
+        "employee_id": 16,
+        "name": "Brian Fritz Jr.",
+        "phone": 4226929556,
+        "job_role": "Software Engineer",
+        "work_location": "New York",
+        "salary": 81908,
+        "managed_by": 13
+    },
+    {
+        "employee_id": 17,
+        "name": "Dana Smith",
+        "phone": 8864429484,
+        "job_role": "Designer",
+        "work_location": "San Francisco",
+        "salary": 95059,
+        "managed_by": 16
+    },
+    {
+        "employee_id": 18,
+        "name": "Andrew Davis",
+        "phone": 7331765995,
+        "job_role": "Designer",
+        "work_location": "Chicago",
+        "salary": 77320,
+        "managed_by": 16
+    },
+    {
+        "employee_id": 19,
+        "name": "Brent Thomas",
+        "phone": 5567833892,
+        "job_role": "Data Analyst",
+        "work_location": "Austin",
+        "salary": 86889,
+        "managed_by": 16
+    },
+    {
+        "employee_id": 20,
+        "name": "Jose Walker",
+        "phone": 8157684321,
+        "job_role": "Designer",
+        "work_location": "New York",
+        "salary": 78455,
+        "managed_by": 19
+    },
+    {
+        "employee_id": 21,
+        "name": "Amy Johnson",
+        "phone": 7947991857,
+        "job_role": "HR Specialist",
+        "work_location": "Chicago",
+        "salary": 57659,
+        "managed_by": 19
+    },
+    {
+        "employee_id": 22,
+        "name": "Rachel Wright",
+        "phone": 6688794405,
+        "job_role": "Software Engineer",
+        "work_location": "Chicago",
+        "salary": 77807,
+        "managed_by": 19
+    },
+    {
+        "employee_id": 23,
+        "name": "Samantha Perry",
+        "phone": 6184562700,
+        "job_role": "Product Manager",
+        "work_location": "Austin",
+        "salary": 107675,
+        "managed_by": 22
+    },
+    {
+        "employee_id": 24,
+        "name": "Jordan Miller",
+        "phone": 8897598119,
+        "job_role": "Designer",
+        "work_location": "San Francisco",
+        "salary": 116545,
+        "managed_by": 22
+    },
+    {
+        "employee_id": 25,
+        "name": "Katherine Parks",
+        "phone": 2923666522,
+        "job_role": "HR Specialist",
+        "work_location": "San Francisco",
+        "salary": 111897,
+        "managed_by": 22
+    },
+    {
+        "employee_id": 26,
+        "name": "Michael Cooke",
+        "phone": 5374059057,
+        "job_role": "HR Specialist",
+        "work_location": "Chicago",
+        "salary": 102556,
+        "managed_by": 25
+    },
+    {
+        "employee_id": 27,
+        "name": "Brandon Diaz",
+        "phone": 4340167323,
+        "job_role": "Product Manager",
+        "work_location": "Chicago",
+        "salary": 70823,
+        "managed_by": 25
+    },
+    {
+        "employee_id": 28,
+        "name": "Sandra Walker",
+        "phone": 2026450503,
+        "job_role": "HR Specialist",
+        "work_location": "New York",
+        "salary": 70717,
+        "managed_by": 25
+    },
+    {
+        "employee_id": 29,
+        "name": "Sharon Davis",
+        "phone": 3088551369,
+        "job_role": "Software Engineer",
+        "work_location": "San Francisco",
+        "salary": 99428,
+        "managed_by": 28
+    },
+    {
+        "employee_id": 30,
+        "name": "Jenna Gonzalez",
+        "phone": 5668052015,
+        "job_role": "Product Manager",
+        "work_location": "Austin",
+        "salary": 115588,
+        "managed_by": 28
+    },
+    {
+        "employee_id": 31,
+        "name": "Shelby Clayton",
+        "phone": 6090585288,
+        "job_role": "HR Specialist",
+        "work_location": "Chicago",
+        "salary": 59502,
+        "managed_by": 28
+    },
+    {
+        "employee_id": 32,
+        "name": "Anita Johnson",
+        "phone": 2892059203,
+        "job_role": "HR Specialist",
+        "work_location": "Austin",
+        "salary": 54552,
+        "managed_by": 31
+    },
+    {
+        "employee_id": 33,
+        "name": "Laura Brown",
+        "phone": 4594190505,
+        "job_role": "HR Specialist",
+        "work_location": "Chicago",
+        "salary": 63296,
+        "managed_by": 31
+    },
+    {
+        "employee_id": 34,
+        "name": "Jody Roberts",
+        "phone": 8599623463,
+        "job_role": "Product Manager",
+        "work_location": "New York",
+        "salary": 50181,
+        "managed_by": 31
+    },
+    {
+        "employee_id": 35,
+        "name": "Alexis Gibson",
+        "phone": 9589995936,
+        "job_role": "Designer",
+        "work_location": "Chicago",
+        "salary": 64742,
+        "managed_by": 34
+    },
+    {
+        "employee_id": 36,
+        "name": "Michelle Hanson",
+        "phone": 6893512205,
+        "job_role": "Software Engineer",
+        "work_location": "Chicago",
+        "salary": 83347,
+        "managed_by": 34
+    },
+    {
+        "employee_id": 37,
+        "name": "Victoria Barrett",
+        "phone": 9274048588,
+        "job_role": "Data Analyst",
+        "work_location": "San Francisco",
+        "salary": 66726,
+        "managed_by": 34
+    },
+    {
+        "employee_id": 38,
+        "name": "Charles Santos",
+        "phone": 8832034152,
+        "job_role": "HR Specialist",
+        "work_location": "San Francisco",
+        "salary": 79826,
+        "managed_by": 37
+    },
+    {
+        "employee_id": 39,
+        "name": "Victoria Jackson DDS",
+        "phone": 7948978939,
+        "job_role": "Data Analyst",
+        "work_location": "New York",
+        "salary": 94315,
+        "managed_by": 37
+    },
+    {
+        "employee_id": 40,
+        "name": "Joseph Walker",
+        "phone": 1648886623,
+        "job_role": "Data Analyst",
+        "work_location": "Austin",
+        "salary": 70884,
+        "managed_by": 37
+    },
+    {
+        "employee_id": 41,
+        "name": "Tammy Parker",
+        "phone": 4486693627,
+        "job_role": "Product Manager",
+        "work_location": "New York",
+        "salary": 50365,
+        "managed_by": 40
+    },
+    {
+        "employee_id": 42,
+        "name": "Alexander Malone",
+        "phone": 3608531642,
+        "job_role": "Software Engineer",
+        "work_location": "San Francisco",
+        "salary": 117044,
+        "managed_by": 40
+    },
+    {
+        "employee_id": 43,
+        "name": "Christopher Lowe",
+        "phone": 4865715544,
+        "job_role": "Designer",
+        "work_location": "Austin",
+        "salary": 63219,
+        "managed_by": 40
+    },
+    {
+        "employee_id": 44,
+        "name": "Jimmy Young",
+        "phone": 6509971440,
+        "job_role": "Data Analyst",
+        "work_location": "New York",
+        "salary": 50955,
+        "managed_by": 43
+    },
+    {
+        "employee_id": 45,
+        "name": "Omar Hernandez",
+        "phone": 5034925423,
+        "job_role": "Data Analyst",
+        "work_location": "New York",
+        "salary": 112526,
+        "managed_by": 43
+    },
+    {
+        "employee_id": 46,
+        "name": "Matthew Alexander",
+        "phone": 5818754802,
+        "job_role": "Product Manager",
+        "work_location": "San Francisco",
+        "salary": 96154,
+        "managed_by": 43
+    },
+    {
+        "employee_id": 47,
+        "name": "Erin Jones",
+        "phone": 4647929673,
+        "job_role": "Product Manager",
+        "work_location": "San Francisco",
+        "salary": 59279,
+        "managed_by": 46
+    },
+    {
+        "employee_id": 48,
+        "name": "Leslie Donovan",
+        "phone": 7044478824,
+        "job_role": "Data Analyst",
+        "work_location": "Chicago",
+        "salary": 85839,
+        "managed_by": 46
+    },
+    {
+        "employee_id": 49,
+        "name": "Jonathan Smith MD",
+        "phone": 6722984353,
+        "job_role": "Data Analyst",
+        "work_location": "Austin",
+        "salary": 52478,
+        "managed_by": 46
+    },
+    {
+        "employee_id": 50,
+        "name": "Carrie Clark",
+        "phone": 5680731004,
+        "job_role": "Data Analyst",
+        "work_location": "San Francisco",
+        "salary": 55248,
+        "managed_by": 49
+    }
+]
