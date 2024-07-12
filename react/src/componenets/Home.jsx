@@ -43,7 +43,7 @@ const Home = (props) => {
                 }
             </div>
 
-            <h3>Softtware Engineers</h3>
+            <h3>Software Engineers</h3>
             <div className="employees">
                 {
                     SoftwareEngineer.map((employee) => (
@@ -69,9 +69,6 @@ const Home = (props) => {
                     ))
                 }
             </div>
-
-
-
         </>
     )
 }

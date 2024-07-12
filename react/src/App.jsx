@@ -12,6 +12,7 @@ import Contact from "./componenets/Contact.jsx"
 import Home from "./componenets/Home.jsx"
 import Login from "./componenets/Login.jsx"
 import MyAccount from "./componenets/MyAccount.jsx"
+import WorkForUs from './componenets/WorkForUs.jsx';
 
 function App() {
   const [data, setData] = useState([]);
@@ -48,14 +49,19 @@ function App() {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                  <Link className="nav-link" to="/">
+                    Home
+                  </Link>
+                </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/about">
                     About
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact">
-                    Contact
+                  <Link className="nav-link" to="/workforus">
+                    Work For Us
                   </Link>
                 </li>
               </ul>
@@ -82,7 +88,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Home data={data}></Home>} />
             <Route path='/about' element={<About></About>}></Route>
-            <Route path='/contact' element={<Contact></Contact>}></Route>
+            <Route path='/workforus' element={<WorkForUs></WorkForUs>}></Route>
             <Route path='/myaccount' element={<MyAccount></MyAccount>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
           </Routes>
