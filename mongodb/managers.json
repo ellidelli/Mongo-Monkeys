@@ -1,11 +1,11 @@
 [
     {
         "manager_id": 1,
-        "name": "Jennifer Webster",
-        "phone": 9118409814,
+        "name": "Nicole Harris DVM",
+        "phone": 5267449992,
         "job_role": "Manager",
         "work_location": "Chicago",
-        "salary": 83386,
+        "salary": 162754,
         "managed_employees": [
             2,
             3,
@@ -14,11 +14,11 @@
     },
     {
         "manager_id": 4,
-        "name": "Natasha Mendez",
-        "phone": 7257260116,
+        "name": "Mark Martin",
+        "phone": 9712863990,
         "job_role": "Manager",
-        "work_location": "Chicago",
-        "salary": 148101,
+        "work_location": "New York",
+        "salary": 77098,
         "managed_employees": [
             5,
             6,
@@ -27,11 +27,11 @@
     },
     {
         "manager_id": 7,
-        "name": "Tanya Bradley",
-        "phone": 6058518901,
+        "name": "Jackson Powell",
+        "phone": 2962289575,
         "job_role": "Manager",
         "work_location": "New York",
-        "salary": 106470,
+        "salary": 138256,
         "managed_employees": [
             8,
             9,
@@ -40,11 +40,11 @@
     },
     {
         "manager_id": 10,
-        "name": "Rachel Kim",
-        "phone": 9552168420,
+        "name": "Ross Lambert",
+        "phone": 7138863172,
         "job_role": "Manager",
-        "work_location": "Chicago",
-        "salary": 100035,
+        "work_location": "New York",
+        "salary": 160048,
         "managed_employees": [
             11,
             12,
@@ -53,11 +53,11 @@
     },
     {
         "manager_id": 13,
-        "name": "Jennifer Jones",
-        "phone": 4265652731,
+        "name": "Ashley Hughes",
+        "phone": 4834651553,
         "job_role": "Manager",
         "work_location": "New York",
-        "salary": 134223,
+        "salary": 135384,
         "managed_employees": [
             14,
             15,
@@ -66,11 +66,11 @@
     },
     {
         "manager_id": 16,
-        "name": "Brian Fritz Jr.",
-        "phone": 4226929556,
+        "name": "Melissa King",
+        "phone": 4446830640,
         "job_role": "Manager",
-        "work_location": "New York",
-        "salary": 122862,
+        "work_location": "San Francisco",
+        "salary": 75428,
         "managed_employees": [
             17,
             18,
@@ -79,11 +79,11 @@
     },
     {
         "manager_id": 19,
-        "name": "Brent Thomas",
-        "phone": 5567833892,
+        "name": "Katherine Carr",
+        "phone": 8034957239,
         "job_role": "Manager",
-        "work_location": "Austin",
-        "salary": 130334,
+        "work_location": "San Francisco",
+        "salary": 168081,
         "managed_employees": [
             20,
             21,
@@ -92,11 +92,11 @@
     },
     {
         "manager_id": 22,
-        "name": "Rachel Wright",
-        "phone": 6688794405,
+        "name": "Diana Brown",
+        "phone": 1862612396,
         "job_role": "Manager",
-        "work_location": "Chicago",
-        "salary": 116710,
+        "work_location": "Austin",
+        "salary": 90015,
         "managed_employees": [
             23,
             24,
@@ -105,11 +105,11 @@
     },
     {
         "manager_id": 25,
-        "name": "Katherine Parks",
-        "phone": 2923666522,
+        "name": "Jennifer Lopez",
+        "phone": 7031264357,
         "job_role": "Manager",
         "work_location": "San Francisco",
-        "salary": 167846,
+        "salary": 174822,
         "managed_employees": [
             26,
             27,
@@ -118,11 +118,11 @@
     },
     {
         "manager_id": 28,
-        "name": "Sandra Walker",
-        "phone": 2026450503,
+        "name": "Thomas Wright",
+        "phone": 2694906280,
         "job_role": "Manager",
-        "work_location": "New York",
-        "salary": 106076,
+        "work_location": "Chicago",
+        "salary": 77157,
         "managed_employees": [
             29,
             30,
@@ -131,11 +131,11 @@
     },
     {
         "manager_id": 31,
-        "name": "Shelby Clayton",
-        "phone": 6090585288,
+        "name": "Victoria White",
+        "phone": 7300536219,
         "job_role": "Manager",
-        "work_location": "Chicago",
-        "salary": 89253,
+        "work_location": "New York",
+        "salary": 160958,
         "managed_employees": [
             32,
             33,
@@ -144,11 +144,11 @@
     },
     {
         "manager_id": 34,
-        "name": "Jody Roberts",
-        "phone": 8599623463,
+        "name": "Maria Giles DDS",
+        "phone": 6314825886,
         "job_role": "Manager",
         "work_location": "New York",
-        "salary": 75272,
+        "salary": 110828,
         "managed_employees": [
             35,
             36,
@@ -157,11 +157,11 @@
     },
     {
         "manager_id": 37,
-        "name": "Victoria Barrett",
-        "phone": 9274048588,
+        "name": "Erica Guerra",
+        "phone": 9895567968,
         "job_role": "Manager",
-        "work_location": "San Francisco",
-        "salary": 100089,
+        "work_location": "Austin",
+        "salary": 113865,
         "managed_employees": [
             38,
             39,
@@ -170,11 +170,11 @@
     },
     {
         "manager_id": 40,
-        "name": "Joseph Walker",
-        "phone": 1648886623,
+        "name": "Charles Chambers",
+        "phone": 4610569216,
         "job_role": "Manager",
-        "work_location": "Austin",
-        "salary": 106326,
+        "work_location": "Chicago",
+        "salary": 103324,
         "managed_employees": [
             41,
             42,
@@ -183,11 +183,11 @@
     },
     {
         "manager_id": 43,
-        "name": "Christopher Lowe",
-        "phone": 4865715544,
+        "name": "Katelyn Weber",
+        "phone": 1646391890,
         "job_role": "Manager",
-        "work_location": "Austin",
-        "salary": 94828,
+        "work_location": "San Francisco",
+        "salary": 133912,
         "managed_employees": [
             44,
             45,
@@ -196,11 +196,11 @@
     },
     {
         "manager_id": 46,
-        "name": "Matthew Alexander",
-        "phone": 5818754802,
+        "name": "Jennifer Munoz",
+        "phone": 1769852205,
         "job_role": "Manager",
-        "work_location": "San Francisco",
-        "salary": 144231,
+        "work_location": "Chicago",
+        "salary": 163088,
         "managed_employees": [
             47,
             48,
@@ -209,11 +209,11 @@
     },
     {
         "manager_id": 49,
-        "name": "Jonathan Smith MD",
-        "phone": 6722984353,
+        "name": "Jackie Cooper",
+        "phone": 8083813836,
         "job_role": "Manager",
-        "work_location": "Austin",
-        "salary": 78717,
+        "work_location": "San Francisco",
+        "salary": 122733,
         "managed_employees": [
             50
         ]
