@@ -17,7 +17,7 @@ directory. The directory should include:\
 2. Use node.js to build a web service to read and write data.
 3. Build the web application in React.
 ## Data Analysis
-Create a solution that predicts salary based on job role and location.\
+Create a solution that predicts salary based on job role and location.
 1. Create a script that generates and populates the database with a minimum of 1000
 records of dummy data.
 2. Train a sklearn.linear_model.LinearRegression model to predict salary based on job
