@@ -70,15 +70,14 @@ app.get('/manages', async (req, res) => {
 
 app.get('/employees/:name', async (req, res) => {
 
-    const name = req.params.name; 
+    const name = req.params.name;
 
     try {
-        // Console log the name parameter
         const client = await MongoClient.connect(url);
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
         
-        const query = { name: { $regex: new RegExp(`^${name}$`, 'i') } };
+        const query = { 'name': `$*${name}$*` };
         const employees = await collection.find(query).toArray();
 
         if (employees.length === 0) {
@@ -88,7 +87,7 @@ app.get('/employees/:name', async (req, res) => {
         console.log(res.json(employees));
     } catch (err) {
         console.error("Error:", err);
-        res.status(500).send("Hmmm, something smells... No socks for you! ☹");
+        res.status(500).send("Hmmm, something's wrong... ☹");
     }
 });
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Search = (props) => {
+const SearchComponent = (props) => {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
 
@@ -12,28 +12,27 @@ const Search = (props) => {
             }
             const data = await response.json();
             props.setData(data); // Assuming props.setData is a function to update data in parent component
-            console.log(data);
             setSearchResults(data);
         } catch (error) {
             console.error('Search error:', error);
         }
     };
 
-    const handleChange = (e) => {
-        setSearchTerm(e.target.value);
+    const handleChange = (event) => {
+        setSearchTerm(event.target.value);
     };
 
     return (
         <div>
             <input
                 type="text"
-                placeholder="Search by name"
+                placeholder="Search by name..."
                 value={searchTerm}
-                onChange={handleChange}
+                onChange={handleChange} // Update search term as user types
             />
             <button onClick={handleSearch}>Search</button>
         </div>
     );
 };
 
-export default Search;
+export default SearchComponent;
