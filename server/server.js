@@ -7,7 +7,7 @@ import cors from 'cors';
 dotenv.config();
 const url = process.env.MONGO_DB_URL;
 const dbName = process.env.MONGO_DB;
-const collectionName = process.env.MONGO_DB_COLLECTION; 
+const collectionName = process.env.MONGO_DB_COLLECTION;
 
 // Create an instance of Express
 const app = express();
@@ -49,7 +49,7 @@ app.get('/login', async (req, res) => {
     }
 });
 
-app.get('/myaccount', async (req, res) => {
+app.get('/manages', async (req, res) => {
     let client;
 
     try {
@@ -57,13 +57,15 @@ app.get('/myaccount', async (req, res) => {
         client = await MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
-        const employees = await collection.find({name: req.query.name}).toArray();
+        const employeeId = parseInt(req.query.employee_id, 10);
+        const employees = await collection.find({ employee_id: employeeId }).toArray();
         res.json(employees);
     } catch (err) {
         console.error("Error:", err);
         res.status(500).send("No employees");
     }
 });
+
 
 // Start the server
 app.listen(PORT, () => {
