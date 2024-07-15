@@ -2,6 +2,7 @@ import express from 'express';
 import { MongoClient } from 'mongodb';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import bodyParser from 'body-parser'
 
 // Load environment variables
 dotenv.config();
@@ -16,6 +17,7 @@ const PORT = 3000;
 // Use CORS and JSON middleware
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser.json());
 
 app.get('/employees', async (req, res) => {
     let client;
@@ -64,6 +66,31 @@ app.get('/myaccount', async (req, res) => {
         res.status(500).send("No employees");
     }
 });
+
+app.get('/employees/:name', async (req, res) => {
+
+    const name = req.params.name; 
+
+    try {
+        // Console log the name parameter
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(collectionName);
+        
+        const query = { name: { $regex: new RegExp(`^${name}$`, 'i') } };
+        const employees = await collection.find(query).toArray();
+
+        if (employees.length === 0) {
+            return res.status(404).json({ error: 'No employees found with that name.' });
+        }
+        res.json(employees);
+        console.log(res.json(employees));
+    } catch (err) {
+        console.error("Error:", err);
+        res.status(500).send("Hmmm, something smells... No socks for you! ☹");
+    }
+});
+
 
 // Start the server
 app.listen(PORT, () => {

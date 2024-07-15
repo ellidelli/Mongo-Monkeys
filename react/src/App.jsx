@@ -13,6 +13,7 @@ import Home from "./componenets/Home.jsx"
 import Login from "./componenets/Login.jsx"
 import MyAccount from "./componenets/MyAccount.jsx"
 import WorkForUs from './componenets/WorkForUs.jsx';
+import Search from './componenets/Search.jsx';
 
 function App() {
   const [data, setData] = useState([]);
@@ -65,10 +66,11 @@ function App() {
                   </Link>
                 </li>
               </ul>
-              <form className="d-flex" role="search">
+              {/* <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                 <button className="btn btn-outline-success" type="submit">Search</button>
-              </form>
+              </form> */}
+              <Search setData={setData} />
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link className="nav-link" to="/myaccount">
