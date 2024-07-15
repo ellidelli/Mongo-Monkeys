@@ -20,10 +20,8 @@ function Login() {
                 localStorage.setItem('salary', response.data[0].salary)
                 localStorage.setItem('job_role', response.data[0].job_role)
                 localStorage.setItem('work_location', response.data[0].work_location)
-                //TODO MANAGED BY
-                localStorage.setItem('managed_by', response.data[0].managed_by)
+                localStorage.setItem('manages', response.data[0].manages)
 
-                //TO DO MANAGES
             }
             setExists(response.data.length > 0);
         } catch (error) {
