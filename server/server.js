@@ -35,16 +35,17 @@ app.get('/employees', async (req, res) => {
     }
 });
 
-app.get('/login', async (req, res) => {
+app.post('/login', async (req, res) => {
     let client;
+    const {username, password} = req.body
 
     try {
         // Connect to the MongoDB client
         client = await MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
-        const employees = await collection.find({name: req.query.name}).toArray();
-        res.json(employees);
+        const user = await collection.findOne({username, password});
+        res.json([user]);
     } catch (err) {
         console.error("Error:", err);
         res.status(500).send("No employees");
