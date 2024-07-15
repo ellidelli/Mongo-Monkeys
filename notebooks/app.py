@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pickle
 import pandas as pd
 
 app = Flask(__name__)
+CORS(app, resources={r"/predict": {"origins": "http://localhost:5173"}})
 
 # Load the saved model
 with open('salary_model.pkl', 'rb') as file:
@@ -31,6 +33,7 @@ def predict():
 
     # Perform prediction using the loaded model from pickle
     prediction = model.predict(input_data)
+    print(prediction)
 
     # Return the predicted salary as JSON response
     return jsonify({'predicted_salary': prediction[0]})
