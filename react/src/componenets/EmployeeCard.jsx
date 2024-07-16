@@ -5,11 +5,10 @@ const EmployeeCard = (props) => {
     return (
         <>
             <div className="employee-card">
-                <div ClassName="employee-picture">
-                    
+                <div className="employee-picture">
+                    <img src={props.image} alt="" />
                 </div>
-                <img src={props.image} alt="" />
-                <div ClassName="employee-data">
+                <div className="employee-data">
                     <p>Name: {props.data.name}</p>
                     <p>Phone Number: {props.data.phone}</p>
                     <p>Job: {props.data.job_role}</p>

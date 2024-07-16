@@ -3,6 +3,7 @@ import EmployeeCard from "./EmployeeCard";
 import './EmployeeCard.css';
 import Monkey from '../assets/MongoMonkey.png';
 import axios from 'axios';
+import './Home.css'
 
 const Home = (props) => {
     const [employeeImages, setEmployeeImages] = useState({});
@@ -39,69 +40,71 @@ const Home = (props) => {
     }, [props.data]);
 
     const getEmployeeImage = (employee) => {
-        return employeeImages[employee.employee_id] || Monkey; // Fallback to default image if not found
+        return employeeImages[employee.employee_id]
     };
 
     return (
         <>
-            <div className="home">
-                <img src={Monkey} alt="" />
-                <h1>MongoMonkey Employee Directory</h1>
-            </div>
+            <div className = "homeComp">
+                <div className="home">
+                    <img src={Monkey} alt="" />
+                    <h1>MongoMonkey Employee Directory</h1>
+                </div>
 
-            <h3>HR Specialists</h3>
-            <div className="employees">
-                {HRSpecialist.map((employee) => (
-                    <EmployeeCard 
-                        key={employee.employee_id} 
-                        data={employee} 
-                        image={getEmployeeImage(employee)} 
-                    />
-                ))}
-            </div>
+                <h3>HR Specialists</h3>
+                <div className="employees">
+                    {HRSpecialist.map((employee) => (
+                        <EmployeeCard
+                            key={employee.employee_id}
+                            data={employee}
+                            image={getEmployeeImage(employee)}
+                        />
+                    ))}
+                </div>
 
-            <h3>Product Managers</h3>
-            <div className="employees">
-                {ProductManager.map((employee) => (
-                    <EmployeeCard 
-                        key={employee.employee_id} 
-                        data={employee} 
-                        image={getEmployeeImage(employee)} 
-                    />
-                ))}
-            </div>
+                <h3>Product Managers</h3>
+                <div className="employees">
+                    {ProductManager.map((employee) => (
+                        <EmployeeCard
+                            key={employee.employee_id}
+                            data={employee}
+                            image={getEmployeeImage(employee)}
+                        />
+                    ))}
+                </div>
 
-            <h3>Software Engineers</h3>
-            <div className="employees">
-                {SoftwareEngineer.map((employee) => (
-                    <EmployeeCard 
-                        key={employee.employee_id} 
-                        data={employee} 
-                        image={getEmployeeImage(employee)} 
-                    />
-                ))}
-            </div>
+                <h3>Software Engineers</h3>
+                <div className="employees">
+                    {SoftwareEngineer.map((employee) => (
+                        <EmployeeCard
+                            key={employee.employee_id}
+                            data={employee}
+                            image={getEmployeeImage(employee)}
+                        />
+                    ))}
+                </div>
 
-            <h3>Data Analysts</h3>
-            <div className="employees">
-                {DataAnalyst.map((employee) => (
-                    <EmployeeCard 
-                        key={employee.employee_id} 
-                        data={employee} 
-                        image={getEmployeeImage(employee)} 
-                    />
-                ))}
-            </div>
+                <h3>Data Analysts</h3>
+                <div className="employees">
+                    {DataAnalyst.map((employee) => (
+                        <EmployeeCard
+                            key={employee.employee_id}
+                            data={employee}
+                            image={getEmployeeImage(employee)}
+                        />
+                    ))}
+                </div>
 
-            <h3>Designers</h3>
-            <div className="employees">
-                {Designer.map((employee) => (
-                    <EmployeeCard 
-                        key={employee.employee_id} 
-                        data={employee} 
-                        image={getEmployeeImage(employee)} 
-                    />
-                ))}
+                <h3>Designers</h3>
+                <div className="employees">
+                    {Designer.map((employee) => (
+                        <EmployeeCard
+                            key={employee.employee_id}
+                            data={employee}
+                            image={getEmployeeImage(employee)}
+                        />
+                    ))}
+                </div>
             </div>
         </>
     );

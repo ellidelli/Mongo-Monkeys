@@ -9,7 +9,7 @@ const MyAccount = () => {
             <h3>Role: {localStorage.getItem('job_role')}</h3>
             <h3>Salary: {localStorage.getItem('salary')}</h3>
             <ManageSection></ManageSection>
-
+            
         </>
     )
 }

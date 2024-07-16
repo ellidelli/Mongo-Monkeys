@@ -40,7 +40,7 @@ const WorkForUs = () => {
 
     return (
         <>
-        <div style={{margin: 5}}>
+        <div style={{margin: 20}}>
             <h1>Interested in becoming a Monkey? 🙈</h1>
             <p>Enter your job title at one of our four locations to see what you could be earning!</p>
             <form onSubmit={handleSubmit}>
