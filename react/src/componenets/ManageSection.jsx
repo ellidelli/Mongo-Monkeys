@@ -54,7 +54,7 @@ const ManageSection = () => {
     useEffect(() => {
         const fetchEmployeeImages = async () => {
             const newEmployeeImages = {};
-            
+
             for (const employee of employees) {
                 const id = employee.employee_id; // Assuming employee_id is a number
                 const gender = employee.gender === 'male' ? 'men' : 'women';
@@ -79,20 +79,24 @@ const ManageSection = () => {
     }, [employees]);
 
     const getEmployeeImage = (employee) => {
-        return employeeImages[employee.employee_id] || '/path/to/fallback-image.jpg'; // Fallback image if not found
+        return employeeImages[employee.employee_id]
     };
 
     return (
         <div style={{ margin: 20 }}>
-            <h4>{localStorage.getItem('job_role') === 'Product Manager' ? 'Direct Reports' : ''}</h4>
-            <h4>{localStorage.getItem('job_role') === 'HR Specialist' ? 'All Employees' : ''}</h4>
-            {loading ? (
-                <p>Loading...</p>
-            ) : (
-                employees.map((employee) => (
-                    <SalEmpCard key={employee.employee_id} data={employee} image={getEmployeeImage(employee)} />
-                ))
-            )}
+            <div style={{textAlign: 'center'}}>
+                <h4>{localStorage.getItem('job_role') === 'Product Manager' ? 'Direct Reports' : ''}</h4>
+                <h4>{localStorage.getItem('job_role') === 'HR Specialist' ? 'All Employees' : ''}</h4>
+            </div>
+            <div className="employees">
+                {loading ? (
+                    <p> </p>
+                ) : (
+                    employees.map((employee) => (
+                        <SalEmpCard key={employee.employee_id} data={employee} image={getEmployeeImage(employee)} />
+                    ))
+                )}
+            </div>
         </div>
     );
 };

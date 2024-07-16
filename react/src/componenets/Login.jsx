@@ -40,10 +40,11 @@ function Login() {
                 localStorage.setItem('manages', response.data[0].manages);
                 localStorage.setItem('username', response.data[0].username);
                 localStorage.setItem('password', response.data[0].password);
+                localStorage.setItem('gender', response.data[0].gender);
 
-                setExists(true); // Employee exists
+                setExists(true);
             } else {
-                setExists(false); // Employee does not exist or incorrect password
+                setExists(false);
             }
         } catch (error) {
             console.error("Error during login", error);
