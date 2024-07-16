@@ -38,6 +38,8 @@ function Login() {
                 localStorage.setItem('job_role', response.data[0].job_role);
                 localStorage.setItem('work_location', response.data[0].work_location);
                 localStorage.setItem('manages', response.data[0].manages);
+                localStorage.setItem('username', response.data[0].username);
+                localStorage.setItem('password', response.data[0].password);
 
                 setExists(true); // Employee exists
             } else {

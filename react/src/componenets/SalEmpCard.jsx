@@ -5,8 +5,8 @@ const SalEmpCard = (props) => {
     return (
         <>
             <div className="employee-card">
-                <div className="employee-picture">
-                    
+            <div className="employee-picture">
+                    <img src={props.image} alt="" />
                 </div>
                 <div className="employee-data">
                     <p>Name: {props.data.name}</p>
