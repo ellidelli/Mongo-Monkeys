@@ -1,0 +1,15 @@
+.login {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login > form {
+    display:flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.login >form > input {
+    margin-top: 20px;
+}

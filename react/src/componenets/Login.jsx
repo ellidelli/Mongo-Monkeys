@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './Login.css'
 
 function Login() {
     // State hooks for managing input values and validation
@@ -54,29 +55,32 @@ function Login() {
 
     return (
         <>
-            <h1>Login</h1>
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    name="username"
-                    value={username}
-                    onChange={handleChange}
-                    placeholder='Type your username'
-                    required
-                />
-                <input
-                    type="password"
-                    name="password"
-                    value={password}
-                    onChange={handleChange}
-                    placeholder='Type your password'
-                    required
-                />
-                <button type="submit">Login</button>
-            </form>
-            {exists !== null && (
-                <p>{exists ? 'Employee exists!' : 'Employee does not exist or incorrect password!'}</p>
-            )}
+            <div className='login'>
+                <h1>Login</h1>
+                <form onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        name="username"
+                        value={username}
+                        onChange={handleChange}
+                        placeholder='Type your username'
+                        required
+                    />
+                    <input
+                        type="password"
+                        name="password"
+                        value={password}
+                        onChange={handleChange}
+                        placeholder='Type your password'
+                        required
+                    />
+                    <button type="submit">Login</button>
+                </form>
+                {exists !== null && (
+                    <p>{exists ? 'Employee exists!' : 'Employee does not exist or incorrect password!'}</p>
+                )}
+            </div>
+
         </>
     );
 }
