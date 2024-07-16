@@ -10,7 +10,7 @@ const EmployeeCard = (props) => {
                 </div>
                 <div className="employee-data">
                     <p>Name: {props.data.name}</p>
-                    <p>Phone Number: {props.data.phone}</p>
+                    <p>Phone Number: {('('+props.data.phone.toString().substring(0, 3)+') '+props.data.phone.toString().substring(3, 6)+'-'+props.data.phone.toString().substring(6, 10))}</p>
                     <p>Job: {props.data.job_role}</p>
                 </div>
             </div>

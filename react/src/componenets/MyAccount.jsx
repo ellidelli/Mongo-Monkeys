@@ -31,6 +31,12 @@ const MyAccount = () => {
         fetchEmployeeImage();
     }, []);
 
+    const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: 0
+    });
+
     return (
         <>
             <div style={{ margin: 20 }} className='accCard'>
@@ -46,11 +52,10 @@ const MyAccount = () => {
                     <h1>{localStorage.getItem('name')}</h1>
                     <h3>📍 {localStorage.getItem('work_location')}</h3>
                     <h3>Role: {localStorage.getItem('job_role')}</h3>
-                    <h3>Salary: {localStorage.getItem('salary')}</h3>
+                    <h3>Salary: {formatter.format(localStorage.getItem('salary'))}</h3>
                 </div>
             </div>
             <div className = 'wrap'><ManageSection /></div>
-            
         </>
     );
 }
