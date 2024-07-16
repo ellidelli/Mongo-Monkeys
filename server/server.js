@@ -3,6 +3,7 @@ import { MongoClient } from 'mongodb';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser'
+import axios from 'axios'
 
 // Load environment variables
 dotenv.config();
@@ -89,6 +90,25 @@ app.get('/employees/:name', async (req, res) => {
     } catch (err) {
         console.error("Error:", err);
         res.status(500).send("Hmmm, something's wrong... ☹");
+    }
+});
+
+app.get('/proxy/:gender/:id.jpg', async (req, res) => {
+    const { gender, id } = req.params;
+    const imageUrl = `https://randomuser.me/api/portraits/${gender}/${id}.jpg`;
+
+    try {
+        // Fetch the image from the external API
+        const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
+
+        // Set the appropriate content-type
+        res.set('Content-Type', 'image/jpeg');
+        
+        // Send the image data to the client
+        res.send(response.data);
+    } catch (error) {
+        console.error('Error fetching image:', error.message);
+        res.status(404).send('Image not found');
     }
 });
 

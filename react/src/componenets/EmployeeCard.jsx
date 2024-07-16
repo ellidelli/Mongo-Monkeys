@@ -8,6 +8,7 @@ const EmployeeCard = (props) => {
                 <div ClassName="employee-picture">
                     
                 </div>
+                <img src={props.image} alt="" />
                 <div ClassName="employee-data">
                     <p>Name: {props.data.name}</p>
                     <p>Phone Number: {props.data.phone}</p>
