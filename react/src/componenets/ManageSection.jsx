@@ -5,7 +5,9 @@ import SalEmpCard from './SalEmpCard';
 const ManageSection = () => {
     const [employees, setEmployees] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [employeeImages, setEmployeeImages] = useState({});
 
+    // Fetch all employees for HR workers
     const allEmployees = async () => {
         try {
             const response = await axios.get("http://localhost:3000/employees");
@@ -17,6 +19,7 @@ const ManageSection = () => {
         }
     };
 
+    // Fetch managees for Product Managers
     const getManagees = async () => {
         try {
             const response = await axios.post("http://localhost:3000/login", {
@@ -48,6 +51,37 @@ const ManageSection = () => {
         }
     }, []);
 
+    useEffect(() => {
+        const fetchEmployeeImages = async () => {
+            const newEmployeeImages = {};
+            
+            for (const employee of employees) {
+                const id = employee.employee_id; // Assuming employee_id is a number
+                const gender = employee.gender === 'male' ? 'men' : 'women';
+                const imageUrl = `http://localhost:3000/proxy/${gender}/${id}.jpg`;
+
+                try {
+                    // Fetch the image from the proxy server
+                    await axios.get(imageUrl);
+                    newEmployeeImages[employee.employee_id] = imageUrl;
+                } catch (error) {
+                    console.error(`Image not found for employee ${id}: ${error.message}`);
+                    newEmployeeImages[employee.employee_id] = '/path/to/fallback-image.jpg'; // Use fallback image
+                }
+            }
+
+            setEmployeeImages(newEmployeeImages);
+        };
+
+        if (employees.length > 0) {
+            fetchEmployeeImages();
+        }
+    }, [employees]);
+
+    const getEmployeeImage = (employee) => {
+        return employeeImages[employee.employee_id] || '/path/to/fallback-image.jpg'; // Fallback image if not found
+    };
+
     return (
         <div style={{ margin: 20 }}>
             <h4>{localStorage.getItem('job_role') === 'Product Manager' ? 'Direct Reports' : ''}</h4>
@@ -56,7 +90,7 @@ const ManageSection = () => {
                 <p>Loading...</p>
             ) : (
                 employees.map((employee) => (
-                    <SalEmpCard key={employee.employee_id} data={employee} />
+                    <SalEmpCard key={employee.employee_id} data={employee} image={getEmployeeImage(employee)} />
                 ))
             )}
         </div>
